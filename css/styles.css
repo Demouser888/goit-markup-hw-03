@@ -29,7 +29,7 @@
   }
 
   .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -95,7 +95,7 @@
   /* ============= COMPONENTS ============= */
   /* ============= HEADER ============= */
   .page-header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
   }
   
   .header {
@@ -192,17 +192,21 @@
   /* ============= HERO ============= */
   .hero {
     background-color: #2F303A;
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .hero-title {
-    margin-bottom: 30px;
+    max-width: 696px;
+    margin: 0 auto 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;  
     text-transform: uppercase;
+
     color: var(--primary-white-color);
   }
   .modal-btn {
@@ -250,6 +254,11 @@
     margin-right: 30px;
 
   }
+  
+  .hidden-item {
+    flex-basis: calc((100%-90px)/4);
+  }
+
   /*============== WORK ==============*/
  .work h2 {
   margin-bottom: 50px;
@@ -299,7 +308,7 @@
       padding-bottom: 30px;
     }
     .team-caption h3 {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
 
   /* ============= FOOTER ============= */
@@ -353,13 +362,14 @@
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+    gap: 8px;
     /*margin-right: auto;
     margin-left: auto;*/
   }
 
-  .btn-portfolio-item:not(:last-child) {
+  /*.btn-portfolio-item:not(:last-child) {
     margin-right: 8px;
-  }
+  }*/
 
   .modal-btn-portfolio {
     display: inline-block;
@@ -407,22 +417,26 @@
   .portfol-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
+
   .portfol-list-item {
     width: 370px;
     
   }
-  .portfol-list-item:not(:nth-child(3n)) {
+  
+  /*.portfol-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
 
   .portfol-list-item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
-  }
+  }*/
 
   .portfolio-caption {
     padding: 20px 24px;
-    border-bottom: 1px solid #eeeeee;
+    border: 1px solid #eeeeee;
+    border-top: none;
     width: 370px;
   }
   .portfolio-caption h3 {
